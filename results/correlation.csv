@@ -1,0 +1,6 @@
+,iPhone,Perfume,Deep fryer,Bag,Firewood
+iPhone,1.0,0.05,-0.02,-0.03,0.11
+Perfume,0.05,1.0,0.7,0.85,0.32
+Deep fryer,-0.02,0.7,1.0,0.59,0.3
+Bag,-0.03,0.85,0.59,1.0,0.29
+Firewood,0.11,0.32,0.3,0.29,1.0

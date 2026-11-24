@@ -1,0 +1,721 @@
+series,model,fold,date,actual,pred
+iPhone,Naive,1,2023-11-01,52.0,54.0
+iPhone,Naive,1,2023-12-01,49.0,54.0
+iPhone,Naive,1,2024-01-01,46.0,54.0
+iPhone,Naive,1,2024-02-01,50.0,54.0
+iPhone,Naive,1,2024-03-01,46.0,54.0
+iPhone,Naive,1,2024-04-01,51.0,54.0
+iPhone,Naive,1,2024-05-01,48.0,54.0
+iPhone,Naive,1,2024-06-01,55.0,54.0
+iPhone,Naive,1,2024-07-01,51.0,54.0
+iPhone,Naive,1,2024-08-01,45.0,54.0
+iPhone,Naive,1,2024-09-01,65.0,54.0
+iPhone,Naive,1,2024-10-01,53.0,54.0
+iPhone,Naive,2,2024-11-01,52.0,53.0
+iPhone,Naive,2,2024-12-01,46.0,53.0
+iPhone,Naive,2,2025-01-01,44.0,53.0
+iPhone,Naive,2,2025-02-01,46.0,53.0
+iPhone,Naive,2,2025-03-01,47.0,53.0
+iPhone,Naive,2,2025-04-01,48.0,53.0
+iPhone,Naive,2,2025-05-01,47.0,53.0
+iPhone,Naive,2,2025-06-01,46.0,53.0
+iPhone,Naive,2,2025-07-01,48.0,53.0
+iPhone,Naive,2,2025-08-01,43.0,53.0
+iPhone,Naive,2,2025-09-01,70.0,53.0
+iPhone,Naive,2,2025-10-01,60.0,53.0
+iPhone,Naive,3,2025-11-01,54.0,60.0
+iPhone,Naive,3,2025-12-01,53.0,60.0
+iPhone,Naive,3,2026-01-01,50.0,60.0
+iPhone,Naive,3,2026-02-01,43.0,60.0
+iPhone,Naive,3,2026-03-01,57.0,60.0
+iPhone,Naive,3,2026-04-01,45.0,60.0
+iPhone,Naive,3,2026-05-01,44.0,60.0
+iPhone,Naive,3,2026-06-01,47.0,60.0
+iPhone,Naive,3,2026-07-01,46.0,60.0
+iPhone,Naive,3,2026-08-01,45.0,60.0
+iPhone,Naive,3,2026-09-01,76.0,60.0
+iPhone,Naive,3,2026-10-01,58.0,60.0
+iPhone,Seasonal naive (baseline),1,2023-11-01,52.0,60.0
+iPhone,Seasonal naive (baseline),1,2023-12-01,49.0,59.0
+iPhone,Seasonal naive (baseline),1,2024-01-01,46.0,55.0
+iPhone,Seasonal naive (baseline),1,2024-02-01,50.0,56.0
+iPhone,Seasonal naive (baseline),1,2024-03-01,46.0,54.0
+iPhone,Seasonal naive (baseline),1,2024-04-01,51.0,62.0
+iPhone,Seasonal naive (baseline),1,2024-05-01,48.0,52.0
+iPhone,Seasonal naive (baseline),1,2024-06-01,55.0,61.0
+iPhone,Seasonal naive (baseline),1,2024-07-01,51.0,62.0
+iPhone,Seasonal naive (baseline),1,2024-08-01,45.0,49.0
+iPhone,Seasonal naive (baseline),1,2024-09-01,65.0,73.0
+iPhone,Seasonal naive (baseline),1,2024-10-01,53.0,54.0
+iPhone,Seasonal naive (baseline),2,2024-11-01,52.0,52.0
+iPhone,Seasonal naive (baseline),2,2024-12-01,46.0,49.0
+iPhone,Seasonal naive (baseline),2,2025-01-01,44.0,46.0
+iPhone,Seasonal naive (baseline),2,2025-02-01,46.0,50.0
+iPhone,Seasonal naive (baseline),2,2025-03-01,47.0,46.0
+iPhone,Seasonal naive (baseline),2,2025-04-01,48.0,51.0
+iPhone,Seasonal naive (baseline),2,2025-05-01,47.0,48.0
+iPhone,Seasonal naive (baseline),2,2025-06-01,46.0,55.0
+iPhone,Seasonal naive (baseline),2,2025-07-01,48.0,51.0
+iPhone,Seasonal naive (baseline),2,2025-08-01,43.0,45.0
+iPhone,Seasonal naive (baseline),2,2025-09-01,70.0,65.0
+iPhone,Seasonal naive (baseline),2,2025-10-01,60.0,53.0
+iPhone,Seasonal naive (baseline),3,2025-11-01,54.0,52.0
+iPhone,Seasonal naive (baseline),3,2025-12-01,53.0,46.0
+iPhone,Seasonal naive (baseline),3,2026-01-01,50.0,44.0
+iPhone,Seasonal naive (baseline),3,2026-02-01,43.0,46.0
+iPhone,Seasonal naive (baseline),3,2026-03-01,57.0,47.0
+iPhone,Seasonal naive (baseline),3,2026-04-01,45.0,48.0
+iPhone,Seasonal naive (baseline),3,2026-05-01,44.0,47.0
+iPhone,Seasonal naive (baseline),3,2026-06-01,47.0,46.0
+iPhone,Seasonal naive (baseline),3,2026-07-01,46.0,48.0
+iPhone,Seasonal naive (baseline),3,2026-08-01,45.0,43.0
+iPhone,Seasonal naive (baseline),3,2026-09-01,76.0,70.0
+iPhone,Seasonal naive (baseline),3,2026-10-01,58.0,60.0
+iPhone,"Holt-Winters (damped, additive)",1,2023-11-01,52.0,57.325754794250116
+iPhone,"Holt-Winters (damped, additive)",1,2023-12-01,49.0,54.923197180395654
+iPhone,"Holt-Winters (damped, additive)",1,2024-01-01,46.0,54.22029097585319
+iPhone,"Holt-Winters (damped, additive)",1,2024-02-01,50.0,51.492778392817634
+iPhone,"Holt-Winters (damped, additive)",1,2024-03-01,46.0,50.394240308825786
+iPhone,"Holt-Winters (damped, additive)",1,2024-04-01,51.0,53.28511633088138
+iPhone,"Holt-Winters (damped, additive)",1,2024-05-01,48.0,56.07545928074073
+iPhone,"Holt-Winters (damped, additive)",1,2024-06-01,55.0,58.79751075881344
+iPhone,"Holt-Winters (damped, additive)",1,2024-07-01,51.0,57.45478211729714
+iPhone,"Holt-Winters (damped, additive)",1,2024-08-01,45.0,50.406602847486624
+iPhone,"Holt-Winters (damped, additive)",1,2024-09-01,65.0,71.32499627025788
+iPhone,"Holt-Winters (damped, additive)",1,2024-10-01,53.0,60.18398962795682
+iPhone,"Holt-Winters (damped, additive)",2,2024-11-01,52.0,50.566982615899654
+iPhone,"Holt-Winters (damped, additive)",2,2024-12-01,46.0,48.29036325236118
+iPhone,"Holt-Winters (damped, additive)",2,2025-01-01,44.0,47.21627557230313
+iPhone,"Holt-Winters (damped, additive)",2,2025-02-01,46.0,46.548418931711495
+iPhone,"Holt-Winters (damped, additive)",2,2025-03-01,47.0,44.65340400542033
+iPhone,"Holt-Winters (damped, additive)",2,2025-04-01,48.0,48.181995160395594
+iPhone,"Holt-Winters (damped, additive)",2,2025-05-01,47.0,49.395280753393216
+iPhone,"Holt-Winters (damped, additive)",2,2025-06-01,46.0,53.48395637402249
+iPhone,"Holt-Winters (damped, additive)",2,2025-07-01,48.0,51.42415563655113
+iPhone,"Holt-Winters (damped, additive)",2,2025-08-01,43.0,44.73649999113855
+iPhone,"Holt-Winters (damped, additive)",2,2025-09-01,70.0,65.48078081626939
+iPhone,"Holt-Winters (damped, additive)",2,2025-10-01,60.0,54.13889194297031
+iPhone,"Holt-Winters (damped, additive)",3,2025-11-01,54.0,51.5137198580281
+iPhone,"Holt-Winters (damped, additive)",3,2025-12-01,53.0,48.20541032348859
+iPhone,"Holt-Winters (damped, additive)",3,2026-01-01,50.0,47.06339203269642
+iPhone,"Holt-Winters (damped, additive)",3,2026-02-01,43.0,47.21546634231916
+iPhone,"Holt-Winters (damped, additive)",3,2026-03-01,57.0,46.03033210436337
+iPhone,"Holt-Winters (damped, additive)",3,2026-04-01,45.0,48.719170995607236
+iPhone,"Holt-Winters (damped, additive)",3,2026-05-01,44.0,49.41540928917833
+iPhone,"Holt-Winters (damped, additive)",3,2026-06-01,47.0,52.29942696804542
+iPhone,"Holt-Winters (damped, additive)",3,2026-07-01,46.0,51.6158760692535
+iPhone,"Holt-Winters (damped, additive)",3,2026-08-01,45.0,45.442885641505484
+iPhone,"Holt-Winters (damped, additive)",3,2026-09-01,76.0,67.70323929292312
+iPhone,"Holt-Winters (damped, additive)",3,2026-10-01,58.0,56.437347682439245
+iPhone,Ridge on lags + month,1,2023-11-01,52.0,57.287114219187
+iPhone,Ridge on lags + month,1,2023-12-01,49.0,57.85976387298577
+iPhone,Ridge on lags + month,1,2024-01-01,46.0,56.91658759673862
+iPhone,Ridge on lags + month,1,2024-02-01,50.0,54.594365346650974
+iPhone,Ridge on lags + month,1,2024-03-01,46.0,54.76564942678613
+iPhone,Ridge on lags + month,1,2024-04-01,51.0,57.73928473307934
+iPhone,Ridge on lags + month,1,2024-05-01,48.0,59.48171867633705
+iPhone,Ridge on lags + month,1,2024-06-01,55.0,61.24125969743389
+iPhone,Ridge on lags + month,1,2024-07-01,51.0,59.4888088232638
+iPhone,Ridge on lags + month,1,2024-08-01,45.0,55.46100303523333
+iPhone,Ridge on lags + month,1,2024-09-01,65.0,69.84361618976556
+iPhone,Ridge on lags + month,1,2024-10-01,53.0,61.80848118253731
+iPhone,Ridge on lags + month,2,2024-11-01,52.0,53.8149134633769
+iPhone,Ridge on lags + month,2,2024-12-01,46.0,53.596785802425124
+iPhone,Ridge on lags + month,2,2025-01-01,44.0,52.019782819339525
+iPhone,Ridge on lags + month,2,2025-02-01,46.0,50.536382923536735
+iPhone,Ridge on lags + month,2,2025-03-01,47.0,50.17733428823164
+iPhone,Ridge on lags + month,2,2025-04-01,48.0,52.58143811331731
+iPhone,Ridge on lags + month,2,2025-05-01,47.0,55.12928210533546
+iPhone,Ridge on lags + month,2,2025-06-01,46.0,57.31073272713204
+iPhone,Ridge on lags + month,2,2025-07-01,48.0,54.48686278438787
+iPhone,Ridge on lags + month,2,2025-08-01,43.0,51.349103797368045
+iPhone,Ridge on lags + month,2,2025-09-01,70.0,65.6726198123979
+iPhone,Ridge on lags + month,2,2025-10-01,60.0,58.728657639879806
+iPhone,Ridge on lags + month,3,2025-11-01,54.0,57.50886347875612
+iPhone,Ridge on lags + month,3,2025-12-01,53.0,54.88329896894767
+iPhone,Ridge on lags + month,3,2026-01-01,50.0,51.99927936528373
+iPhone,Ridge on lags + month,3,2026-02-01,43.0,49.59501073419887
+iPhone,Ridge on lags + month,3,2026-03-01,57.0,49.692478521534746
+iPhone,Ridge on lags + month,3,2026-04-01,45.0,51.29771549024171
+iPhone,Ridge on lags + month,3,2026-05-01,44.0,53.664858113924936
+iPhone,Ridge on lags + month,3,2026-06-01,47.0,53.92954301571894
+iPhone,Ridge on lags + month,3,2026-07-01,46.0,51.85726970190254
+iPhone,Ridge on lags + month,3,2026-08-01,45.0,48.830379276867575
+iPhone,Ridge on lags + month,3,2026-09-01,76.0,65.76925775575006
+iPhone,Ridge on lags + month,3,2026-10-01,58.0,59.8654287533525
+Perfume,Naive,1,2023-11-01,24.0,20.0
+Perfume,Naive,1,2023-12-01,25.0,20.0
+Perfume,Naive,1,2024-01-01,28.0,20.0
+Perfume,Naive,1,2024-02-01,35.0,20.0
+Perfume,Naive,1,2024-03-01,45.0,20.0
+Perfume,Naive,1,2024-04-01,32.0,20.0
+Perfume,Naive,1,2024-05-01,23.0,20.0
+Perfume,Naive,1,2024-06-01,27.0,20.0
+Perfume,Naive,1,2024-07-01,36.0,20.0
+Perfume,Naive,1,2024-08-01,33.0,20.0
+Perfume,Naive,1,2024-09-01,35.0,20.0
+Perfume,Naive,1,2024-10-01,24.0,20.0
+Perfume,Naive,2,2024-11-01,28.0,24.0
+Perfume,Naive,2,2024-12-01,25.0,24.0
+Perfume,Naive,2,2025-01-01,24.0,24.0
+Perfume,Naive,2,2025-02-01,28.0,24.0
+Perfume,Naive,2,2025-03-01,46.0,24.0
+Perfume,Naive,2,2025-04-01,22.0,24.0
+Perfume,Naive,2,2025-05-01,24.0,24.0
+Perfume,Naive,2,2025-06-01,24.0,24.0
+Perfume,Naive,2,2025-07-01,25.0,24.0
+Perfume,Naive,2,2025-08-01,27.0,24.0
+Perfume,Naive,2,2025-09-01,30.0,24.0
+Perfume,Naive,2,2025-10-01,23.0,24.0
+Perfume,Naive,3,2025-11-01,23.0,23.0
+Perfume,Naive,3,2025-12-01,23.0,23.0
+Perfume,Naive,3,2026-01-01,23.0,23.0
+Perfume,Naive,3,2026-02-01,28.0,23.0
+Perfume,Naive,3,2026-03-01,40.0,23.0
+Perfume,Naive,3,2026-04-01,20.0,23.0
+Perfume,Naive,3,2026-05-01,25.0,23.0
+Perfume,Naive,3,2026-06-01,21.0,23.0
+Perfume,Naive,3,2026-07-01,24.0,23.0
+Perfume,Naive,3,2026-08-01,26.0,23.0
+Perfume,Naive,3,2026-09-01,35.0,23.0
+Perfume,Naive,3,2026-10-01,22.0,23.0
+Perfume,Seasonal naive (baseline),1,2023-11-01,24.0,18.0
+Perfume,Seasonal naive (baseline),1,2023-12-01,25.0,19.0
+Perfume,Seasonal naive (baseline),1,2024-01-01,28.0,18.0
+Perfume,Seasonal naive (baseline),1,2024-02-01,35.0,23.0
+Perfume,Seasonal naive (baseline),1,2024-03-01,45.0,28.0
+Perfume,Seasonal naive (baseline),1,2024-04-01,32.0,36.0
+Perfume,Seasonal naive (baseline),1,2024-05-01,23.0,18.0
+Perfume,Seasonal naive (baseline),1,2024-06-01,27.0,25.0
+Perfume,Seasonal naive (baseline),1,2024-07-01,36.0,19.0
+Perfume,Seasonal naive (baseline),1,2024-08-01,33.0,22.0
+Perfume,Seasonal naive (baseline),1,2024-09-01,35.0,25.0
+Perfume,Seasonal naive (baseline),1,2024-10-01,24.0,20.0
+Perfume,Seasonal naive (baseline),2,2024-11-01,28.0,24.0
+Perfume,Seasonal naive (baseline),2,2024-12-01,25.0,25.0
+Perfume,Seasonal naive (baseline),2,2025-01-01,24.0,28.0
+Perfume,Seasonal naive (baseline),2,2025-02-01,28.0,35.0
+Perfume,Seasonal naive (baseline),2,2025-03-01,46.0,45.0
+Perfume,Seasonal naive (baseline),2,2025-04-01,22.0,32.0
+Perfume,Seasonal naive (baseline),2,2025-05-01,24.0,23.0
+Perfume,Seasonal naive (baseline),2,2025-06-01,24.0,27.0
+Perfume,Seasonal naive (baseline),2,2025-07-01,25.0,36.0
+Perfume,Seasonal naive (baseline),2,2025-08-01,27.0,33.0
+Perfume,Seasonal naive (baseline),2,2025-09-01,30.0,35.0
+Perfume,Seasonal naive (baseline),2,2025-10-01,23.0,24.0
+Perfume,Seasonal naive (baseline),3,2025-11-01,23.0,28.0
+Perfume,Seasonal naive (baseline),3,2025-12-01,23.0,25.0
+Perfume,Seasonal naive (baseline),3,2026-01-01,23.0,24.0
+Perfume,Seasonal naive (baseline),3,2026-02-01,28.0,28.0
+Perfume,Seasonal naive (baseline),3,2026-03-01,40.0,46.0
+Perfume,Seasonal naive (baseline),3,2026-04-01,20.0,22.0
+Perfume,Seasonal naive (baseline),3,2026-05-01,25.0,24.0
+Perfume,Seasonal naive (baseline),3,2026-06-01,21.0,24.0
+Perfume,Seasonal naive (baseline),3,2026-07-01,24.0,25.0
+Perfume,Seasonal naive (baseline),3,2026-08-01,26.0,27.0
+Perfume,Seasonal naive (baseline),3,2026-09-01,35.0,30.0
+Perfume,Seasonal naive (baseline),3,2026-10-01,22.0,23.0
+Perfume,"Holt-Winters (damped, additive)",1,2023-11-01,24.0,21.578234693079743
+Perfume,"Holt-Winters (damped, additive)",1,2023-12-01,25.0,22.86431677321292
+Perfume,"Holt-Winters (damped, additive)",1,2024-01-01,28.0,22.084850230261765
+Perfume,"Holt-Winters (damped, additive)",1,2024-02-01,35.0,27.292773967151692
+Perfume,"Holt-Winters (damped, additive)",1,2024-03-01,45.0,32.20564822427966
+Perfume,"Holt-Winters (damped, additive)",1,2024-04-01,32.0,39.99471905321645
+Perfume,"Holt-Winters (damped, additive)",1,2024-05-01,23.0,21.63941036721609
+Perfume,"Holt-Winters (damped, additive)",1,2024-06-01,27.0,28.62997135749209
+Perfume,"Holt-Winters (damped, additive)",1,2024-07-01,36.0,22.223455909991593
+Perfume,"Holt-Winters (damped, additive)",1,2024-08-01,33.0,25.367501704514957
+Perfume,"Holt-Winters (damped, additive)",1,2024-09-01,35.0,28.256078096800906
+Perfume,"Holt-Winters (damped, additive)",1,2024-10-01,24.0,23.221882386344653
+Perfume,"Holt-Winters (damped, additive)",2,2024-11-01,28.0,31.47565818822063
+Perfume,"Holt-Winters (damped, additive)",2,2024-12-01,25.0,32.64400127051731
+Perfume,"Holt-Winters (damped, additive)",2,2025-01-01,24.0,35.692448904570725
+Perfume,"Holt-Winters (damped, additive)",2,2025-02-01,28.0,42.55134141665939
+Perfume,"Holt-Winters (damped, additive)",2,2025-03-01,46.0,52.03803317335299
+Perfume,"Holt-Winters (damped, additive)",2,2025-04-01,22.0,38.585404859950955
+Perfume,"Holt-Winters (damped, additive)",2,2025-05-01,24.0,29.22913623396411
+Perfume,"Holt-Winters (damped, additive)",2,2025-06-01,24.0,33.34771391079434
+Perfume,"Holt-Winters (damped, additive)",2,2025-07-01,25.0,42.38976956030261
+Perfume,"Holt-Winters (damped, additive)",2,2025-08-01,27.0,39.30126480994436
+Perfume,"Holt-Winters (damped, additive)",2,2025-09-01,30.0,40.86923775204284
+Perfume,"Holt-Winters (damped, additive)",2,2025-10-01,23.0,29.40506404808069
+Perfume,"Holt-Winters (damped, additive)",3,2025-11-01,23.0,25.25987164541268
+Perfume,"Holt-Winters (damped, additive)",3,2025-12-01,23.0,23.877017472790943
+Perfume,"Holt-Winters (damped, additive)",3,2026-01-01,23.0,24.884879206303022
+Perfume,"Holt-Winters (damped, additive)",3,2026-02-01,28.0,30.688935369886394
+Perfume,"Holt-Winters (damped, additive)",3,2026-03-01,40.0,47.256477578653545
+Perfume,"Holt-Winters (damped, additive)",3,2026-04-01,20.0,24.388815034998924
+Perfume,"Holt-Winters (damped, additive)",3,2026-05-01,25.0,25.80662935621318
+Perfume,"Holt-Winters (damped, additive)",3,2026-06-01,21.0,25.578615506167175
+Perfume,"Holt-Winters (damped, additive)",3,2026-07-01,24.0,28.081695823060727
+Perfume,"Holt-Winters (damped, additive)",3,2026-08-01,26.0,29.991133461666465
+Perfume,"Holt-Winters (damped, additive)",3,2026-09-01,35.0,32.08199465987629
+Perfume,"Holt-Winters (damped, additive)",3,2026-10-01,22.0,23.7382570351053
+Perfume,Ridge on lags + month,1,2023-11-01,24.0,22.50715824779828
+Perfume,Ridge on lags + month,1,2023-12-01,25.0,22.609625181487722
+Perfume,Ridge on lags + month,1,2024-01-01,28.0,21.91350237892224
+Perfume,Ridge on lags + month,1,2024-02-01,35.0,27.02143484152036
+Perfume,Ridge on lags + month,1,2024-03-01,45.0,32.056335934835985
+Perfume,Ridge on lags + month,1,2024-04-01,32.0,41.37703091625388
+Perfume,Ridge on lags + month,1,2024-05-01,23.0,24.354106994321597
+Perfume,Ridge on lags + month,1,2024-06-01,27.0,32.69027713171792
+Perfume,Ridge on lags + month,1,2024-07-01,36.0,23.221655811903965
+Perfume,Ridge on lags + month,1,2024-08-01,33.0,27.91614696333584
+Perfume,Ridge on lags + month,1,2024-09-01,35.0,29.289022104950377
+Perfume,Ridge on lags + month,1,2024-10-01,24.0,25.150964704124128
+Perfume,Ridge on lags + month,2,2024-11-01,28.0,30.31900012979785
+Perfume,Ridge on lags + month,2,2024-12-01,25.0,30.74749277696809
+Perfume,Ridge on lags + month,2,2025-01-01,24.0,34.1439826152397
+Perfume,Ridge on lags + month,2,2025-02-01,28.0,41.77069768055854
+Perfume,Ridge on lags + month,2,2025-03-01,46.0,53.09929584830216
+Perfume,Ridge on lags + month,2,2025-04-01,22.0,42.61451802075156
+Perfume,Ridge on lags + month,2,2025-05-01,24.0,33.583633923164534
+Perfume,Ridge on lags + month,2,2025-06-01,24.0,35.317600322482605
+Perfume,Ridge on lags + month,2,2025-07-01,25.0,43.01536352633403
+Perfume,Ridge on lags + month,2,2025-08-01,27.0,41.291082822926455
+Perfume,Ridge on lags + month,2,2025-09-01,30.0,44.11801918528188
+Perfume,Ridge on lags + month,2,2025-10-01,23.0,33.44207553682034
+Perfume,Ridge on lags + month,3,2025-11-01,23.0,28.879277081405785
+Perfume,Ridge on lags + month,3,2025-12-01,23.0,27.262999378536904
+Perfume,Ridge on lags + month,3,2026-01-01,23.0,26.71244115851632
+Perfume,Ridge on lags + month,3,2026-02-01,28.0,29.51177456941237
+Perfume,Ridge on lags + month,3,2026-03-01,40.0,41.40338685493502
+Perfume,Ridge on lags + month,3,2026-04-01,20.0,28.947870206462955
+Perfume,Ridge on lags + month,3,2026-05-01,25.0,28.998513000386364
+Perfume,Ridge on lags + month,3,2026-06-01,21.0,28.072797196351456
+Perfume,Ridge on lags + month,3,2026-07-01,24.0,27.59695731990502
+Perfume,Ridge on lags + month,3,2026-08-01,26.0,28.767852416469953
+Perfume,Ridge on lags + month,3,2026-09-01,35.0,31.012541083141585
+Perfume,Ridge on lags + month,3,2026-10-01,22.0,26.33458406481592
+Deep fryer,Naive,1,2023-11-01,2.0,2.0
+Deep fryer,Naive,1,2023-12-01,2.0,2.0
+Deep fryer,Naive,1,2024-01-01,2.0,2.0
+Deep fryer,Naive,1,2024-02-01,4.0,2.0
+Deep fryer,Naive,1,2024-03-01,5.0,2.0
+Deep fryer,Naive,1,2024-04-01,1.0,2.0
+Deep fryer,Naive,1,2024-05-01,2.0,2.0
+Deep fryer,Naive,1,2024-06-01,1.0,2.0
+Deep fryer,Naive,1,2024-07-01,2.0,2.0
+Deep fryer,Naive,1,2024-08-01,2.0,2.0
+Deep fryer,Naive,1,2024-09-01,2.0,2.0
+Deep fryer,Naive,1,2024-10-01,2.0,2.0
+Deep fryer,Naive,2,2024-11-01,2.0,2.0
+Deep fryer,Naive,2,2024-12-01,2.0,2.0
+Deep fryer,Naive,2,2025-01-01,3.0,2.0
+Deep fryer,Naive,2,2025-02-01,5.0,2.0
+Deep fryer,Naive,2,2025-03-01,3.0,2.0
+Deep fryer,Naive,2,2025-04-01,2.0,2.0
+Deep fryer,Naive,2,2025-05-01,1.0,2.0
+Deep fryer,Naive,2,2025-06-01,2.0,2.0
+Deep fryer,Naive,2,2025-07-01,2.0,2.0
+Deep fryer,Naive,2,2025-08-01,2.0,2.0
+Deep fryer,Naive,2,2025-09-01,2.0,2.0
+Deep fryer,Naive,2,2025-10-01,2.0,2.0
+Deep fryer,Naive,3,2025-11-01,3.0,2.0
+Deep fryer,Naive,3,2025-12-01,3.0,2.0
+Deep fryer,Naive,3,2026-01-01,5.0,2.0
+Deep fryer,Naive,3,2026-02-01,6.0,2.0
+Deep fryer,Naive,3,2026-03-01,3.0,2.0
+Deep fryer,Naive,3,2026-04-01,2.0,2.0
+Deep fryer,Naive,3,2026-05-01,2.0,2.0
+Deep fryer,Naive,3,2026-06-01,2.0,2.0
+Deep fryer,Naive,3,2026-07-01,3.0,2.0
+Deep fryer,Naive,3,2026-08-01,2.0,2.0
+Deep fryer,Naive,3,2026-09-01,3.0,2.0
+Deep fryer,Naive,3,2026-10-01,3.0,2.0
+Deep fryer,Seasonal naive (baseline),1,2023-11-01,2.0,4.0
+Deep fryer,Seasonal naive (baseline),1,2023-12-01,2.0,4.0
+Deep fryer,Seasonal naive (baseline),1,2024-01-01,2.0,4.0
+Deep fryer,Seasonal naive (baseline),1,2024-02-01,4.0,8.0
+Deep fryer,Seasonal naive (baseline),1,2024-03-01,5.0,11.0
+Deep fryer,Seasonal naive (baseline),1,2024-04-01,1.0,4.0
+Deep fryer,Seasonal naive (baseline),1,2024-05-01,2.0,2.0
+Deep fryer,Seasonal naive (baseline),1,2024-06-01,1.0,2.0
+Deep fryer,Seasonal naive (baseline),1,2024-07-01,2.0,2.0
+Deep fryer,Seasonal naive (baseline),1,2024-08-01,2.0,2.0
+Deep fryer,Seasonal naive (baseline),1,2024-09-01,2.0,3.0
+Deep fryer,Seasonal naive (baseline),1,2024-10-01,2.0,2.0
+Deep fryer,Seasonal naive (baseline),2,2024-11-01,2.0,2.0
+Deep fryer,Seasonal naive (baseline),2,2024-12-01,2.0,2.0
+Deep fryer,Seasonal naive (baseline),2,2025-01-01,3.0,2.0
+Deep fryer,Seasonal naive (baseline),2,2025-02-01,5.0,4.0
+Deep fryer,Seasonal naive (baseline),2,2025-03-01,3.0,5.0
+Deep fryer,Seasonal naive (baseline),2,2025-04-01,2.0,1.0
+Deep fryer,Seasonal naive (baseline),2,2025-05-01,1.0,2.0
+Deep fryer,Seasonal naive (baseline),2,2025-06-01,2.0,1.0
+Deep fryer,Seasonal naive (baseline),2,2025-07-01,2.0,2.0
+Deep fryer,Seasonal naive (baseline),2,2025-08-01,2.0,2.0
+Deep fryer,Seasonal naive (baseline),2,2025-09-01,2.0,2.0
+Deep fryer,Seasonal naive (baseline),2,2025-10-01,2.0,2.0
+Deep fryer,Seasonal naive (baseline),3,2025-11-01,3.0,2.0
+Deep fryer,Seasonal naive (baseline),3,2025-12-01,3.0,2.0
+Deep fryer,Seasonal naive (baseline),3,2026-01-01,5.0,3.0
+Deep fryer,Seasonal naive (baseline),3,2026-02-01,6.0,5.0
+Deep fryer,Seasonal naive (baseline),3,2026-03-01,3.0,3.0
+Deep fryer,Seasonal naive (baseline),3,2026-04-01,2.0,2.0
+Deep fryer,Seasonal naive (baseline),3,2026-05-01,2.0,1.0
+Deep fryer,Seasonal naive (baseline),3,2026-06-01,2.0,2.0
+Deep fryer,Seasonal naive (baseline),3,2026-07-01,3.0,2.0
+Deep fryer,Seasonal naive (baseline),3,2026-08-01,2.0,2.0
+Deep fryer,Seasonal naive (baseline),3,2026-09-01,3.0,2.0
+Deep fryer,Seasonal naive (baseline),3,2026-10-01,3.0,2.0
+Deep fryer,"Holt-Winters (damped, additive)",1,2023-11-01,2.0,3.274997558955476
+Deep fryer,"Holt-Winters (damped, additive)",1,2023-12-01,2.0,2.7870496123344624
+Deep fryer,"Holt-Winters (damped, additive)",1,2024-01-01,2.0,2.527292118252562
+Deep fryer,"Holt-Winters (damped, additive)",1,2024-02-01,4.0,6.608115953078894
+Deep fryer,"Holt-Winters (damped, additive)",1,2024-03-01,5.0,8.260773418941563
+Deep fryer,"Holt-Winters (damped, additive)",1,2024-04-01,1.0,1.214025219275193
+Deep fryer,"Holt-Winters (damped, additive)",1,2024-05-01,2.0,0.0
+Deep fryer,"Holt-Winters (damped, additive)",1,2024-06-01,1.0,0.0729396456384439
+Deep fryer,"Holt-Winters (damped, additive)",1,2024-07-01,2.0,0.6337840548446467
+Deep fryer,"Holt-Winters (damped, additive)",1,2024-08-01,2.0,1.615603263419463
+Deep fryer,"Holt-Winters (damped, additive)",1,2024-09-01,2.0,3.0309993062497673
+Deep fryer,"Holt-Winters (damped, additive)",1,2024-10-01,2.0,1.725798869228853
+Deep fryer,"Holt-Winters (damped, additive)",2,2024-11-01,2.0,2.216495249746166
+Deep fryer,"Holt-Winters (damped, additive)",2,2024-12-01,2.0,2.425345068490605
+Deep fryer,"Holt-Winters (damped, additive)",2,2025-01-01,3.0,2.4239344023866396
+Deep fryer,"Holt-Winters (damped, additive)",2,2025-02-01,5.0,4.682205229654684
+Deep fryer,"Holt-Winters (damped, additive)",2,2025-03-01,3.0,6.1489223027784625
+Deep fryer,"Holt-Winters (damped, additive)",2,2025-04-01,2.0,1.5057344995718762
+Deep fryer,"Holt-Winters (damped, additive)",2,2025-05-01,1.0,1.01522223387084
+Deep fryer,"Holt-Winters (damped, additive)",2,2025-06-01,2.0,0.0
+Deep fryer,"Holt-Winters (damped, additive)",2,2025-07-01,2.0,1.2536515241838069
+Deep fryer,"Holt-Winters (damped, additive)",2,2025-08-01,2.0,1.6135290669880356
+Deep fryer,"Holt-Winters (damped, additive)",2,2025-09-01,2.0,2.149400742547172
+Deep fryer,"Holt-Winters (damped, additive)",2,2025-10-01,2.0,2.151157130861878
+Deep fryer,"Holt-Winters (damped, additive)",3,2025-11-01,3.0,2.218562968089092
+Deep fryer,"Holt-Winters (damped, additive)",3,2025-12-01,3.0,2.3489550132665964
+Deep fryer,"Holt-Winters (damped, additive)",3,2026-01-01,5.0,2.9397864205624984
+Deep fryer,"Holt-Winters (damped, additive)",3,2026-02-01,6.0,4.812922039030001
+Deep fryer,"Holt-Winters (damped, additive)",3,2026-03-01,3.0,4.444568067089419
+Deep fryer,"Holt-Winters (damped, additive)",3,2026-04-01,2.0,2.4428301414927094
+Deep fryer,"Holt-Winters (damped, additive)",3,2026-05-01,2.0,1.4174193759345122
+Deep fryer,"Holt-Winters (damped, additive)",3,2026-06-01,2.0,1.5375861144602574
+Deep fryer,"Holt-Winters (damped, additive)",3,2026-07-01,3.0,1.6111932940282214
+Deep fryer,"Holt-Winters (damped, additive)",3,2026-08-01,2.0,1.7039697836853303
+Deep fryer,"Holt-Winters (damped, additive)",3,2026-09-01,3.0,1.950687455417618
+Deep fryer,"Holt-Winters (damped, additive)",3,2026-10-01,3.0,2.004520529800397
+Deep fryer,Ridge on lags + month,1,2023-11-01,2.0,3.0918362766032566
+Deep fryer,Ridge on lags + month,1,2023-12-01,2.0,4.2359561234767265
+Deep fryer,Ridge on lags + month,1,2024-01-01,2.0,4.510673517108946
+Deep fryer,Ridge on lags + month,1,2024-02-01,4.0,6.841951732597746
+Deep fryer,Ridge on lags + month,1,2024-03-01,5.0,10.138901325401793
+Deep fryer,Ridge on lags + month,1,2024-04-01,1.0,7.57499250483193
+Deep fryer,Ridge on lags + month,1,2024-05-01,2.0,4.916227636826132
+Deep fryer,Ridge on lags + month,1,2024-06-01,1.0,4.377357539014242
+Deep fryer,Ridge on lags + month,1,2024-07-01,2.0,4.28766585431017
+Deep fryer,Ridge on lags + month,1,2024-08-01,2.0,3.8142579653675552
+Deep fryer,Ridge on lags + month,1,2024-09-01,2.0,3.966233908189781
+Deep fryer,Ridge on lags + month,1,2024-10-01,2.0,3.5630318654753594
+Deep fryer,Ridge on lags + month,2,2024-11-01,2.0,2.0453131480661777
+Deep fryer,Ridge on lags + month,2,2024-12-01,2.0,2.0322278714018576
+Deep fryer,Ridge on lags + month,2,2025-01-01,3.0,2.000384570700991
+Deep fryer,Ridge on lags + month,2,2025-02-01,5.0,2.8093132606965496
+Deep fryer,Ridge on lags + month,2,2025-03-01,3.0,3.741278126138442
+Deep fryer,Ridge on lags + month,2,2025-04-01,2.0,2.234450815374786
+Deep fryer,Ridge on lags + month,2,2025-05-01,1.0,1.922013160715286
+Deep fryer,Ridge on lags + month,2,2025-06-01,2.0,1.7576749438067862
+Deep fryer,Ridge on lags + month,2,2025-07-01,2.0,1.9214871698831626
+Deep fryer,Ridge on lags + month,2,2025-08-01,2.0,1.933461418160728
+Deep fryer,Ridge on lags + month,2,2025-09-01,2.0,1.9740719564793812
+Deep fryer,Ridge on lags + month,2,2025-10-01,2.0,1.8970206516485868
+Deep fryer,Ridge on lags + month,3,2025-11-01,3.0,2.032086585965984
+Deep fryer,Ridge on lags + month,3,2025-12-01,3.0,2.019620776241791
+Deep fryer,Ridge on lags + month,3,2026-01-01,5.0,2.251874799921689
+Deep fryer,Ridge on lags + month,3,2026-02-01,6.0,3.2703416755925385
+Deep fryer,Ridge on lags + month,3,2026-03-01,3.0,3.4660699067382703
+Deep fryer,Ridge on lags + month,3,2026-04-01,2.0,2.2337382449253846
+Deep fryer,Ridge on lags + month,3,2026-05-01,2.0,1.7853261295515548
+Deep fryer,Ridge on lags + month,3,2026-06-01,2.0,1.8547354168330166
+Deep fryer,Ridge on lags + month,3,2026-07-01,3.0,1.991471469732188
+Deep fryer,Ridge on lags + month,3,2026-08-01,2.0,1.9445864222347873
+Deep fryer,Ridge on lags + month,3,2026-09-01,3.0,1.9802697359018302
+Deep fryer,Ridge on lags + month,3,2026-10-01,3.0,1.9143272248295693
+Bag,Naive,1,2023-11-01,10.0,8.0
+Bag,Naive,1,2023-12-01,9.0,8.0
+Bag,Naive,1,2024-01-01,10.0,8.0
+Bag,Naive,1,2024-02-01,10.0,8.0
+Bag,Naive,1,2024-03-01,11.0,8.0
+Bag,Naive,1,2024-04-01,13.0,8.0
+Bag,Naive,1,2024-05-01,11.0,8.0
+Bag,Naive,1,2024-06-01,13.0,8.0
+Bag,Naive,1,2024-07-01,16.0,8.0
+Bag,Naive,1,2024-08-01,17.0,8.0
+Bag,Naive,1,2024-09-01,12.0,8.0
+Bag,Naive,1,2024-10-01,11.0,8.0
+Bag,Naive,2,2024-11-01,12.0,11.0
+Bag,Naive,2,2024-12-01,12.0,11.0
+Bag,Naive,2,2025-01-01,13.0,11.0
+Bag,Naive,2,2025-02-01,11.0,11.0
+Bag,Naive,2,2025-03-01,14.0,11.0
+Bag,Naive,2,2025-04-01,15.0,11.0
+Bag,Naive,2,2025-05-01,13.0,11.0
+Bag,Naive,2,2025-06-01,13.0,11.0
+Bag,Naive,2,2025-07-01,16.0,11.0
+Bag,Naive,2,2025-08-01,21.0,11.0
+Bag,Naive,2,2025-09-01,11.0,11.0
+Bag,Naive,2,2025-10-01,10.0,11.0
+Bag,Naive,3,2025-11-01,11.0,10.0
+Bag,Naive,3,2025-12-01,10.0,10.0
+Bag,Naive,3,2026-01-01,11.0,10.0
+Bag,Naive,3,2026-02-01,11.0,10.0
+Bag,Naive,3,2026-03-01,14.0,10.0
+Bag,Naive,3,2026-04-01,11.0,10.0
+Bag,Naive,3,2026-05-01,12.0,10.0
+Bag,Naive,3,2026-06-01,12.0,10.0
+Bag,Naive,3,2026-07-01,15.0,10.0
+Bag,Naive,3,2026-08-01,22.0,10.0
+Bag,Naive,3,2026-09-01,13.0,10.0
+Bag,Naive,3,2026-10-01,10.0,10.0
+Bag,Seasonal naive (baseline),1,2023-11-01,10.0,9.0
+Bag,Seasonal naive (baseline),1,2023-12-01,9.0,8.0
+Bag,Seasonal naive (baseline),1,2024-01-01,10.0,8.0
+Bag,Seasonal naive (baseline),1,2024-02-01,10.0,8.0
+Bag,Seasonal naive (baseline),1,2024-03-01,11.0,9.0
+Bag,Seasonal naive (baseline),1,2024-04-01,13.0,11.0
+Bag,Seasonal naive (baseline),1,2024-05-01,11.0,9.0
+Bag,Seasonal naive (baseline),1,2024-06-01,13.0,11.0
+Bag,Seasonal naive (baseline),1,2024-07-01,16.0,14.0
+Bag,Seasonal naive (baseline),1,2024-08-01,17.0,15.0
+Bag,Seasonal naive (baseline),1,2024-09-01,12.0,10.0
+Bag,Seasonal naive (baseline),1,2024-10-01,11.0,8.0
+Bag,Seasonal naive (baseline),2,2024-11-01,12.0,10.0
+Bag,Seasonal naive (baseline),2,2024-12-01,12.0,9.0
+Bag,Seasonal naive (baseline),2,2025-01-01,13.0,10.0
+Bag,Seasonal naive (baseline),2,2025-02-01,11.0,10.0
+Bag,Seasonal naive (baseline),2,2025-03-01,14.0,11.0
+Bag,Seasonal naive (baseline),2,2025-04-01,15.0,13.0
+Bag,Seasonal naive (baseline),2,2025-05-01,13.0,11.0
+Bag,Seasonal naive (baseline),2,2025-06-01,13.0,13.0
+Bag,Seasonal naive (baseline),2,2025-07-01,16.0,16.0
+Bag,Seasonal naive (baseline),2,2025-08-01,21.0,17.0
+Bag,Seasonal naive (baseline),2,2025-09-01,11.0,12.0
+Bag,Seasonal naive (baseline),2,2025-10-01,10.0,11.0
+Bag,Seasonal naive (baseline),3,2025-11-01,11.0,12.0
+Bag,Seasonal naive (baseline),3,2025-12-01,10.0,12.0
+Bag,Seasonal naive (baseline),3,2026-01-01,11.0,13.0
+Bag,Seasonal naive (baseline),3,2026-02-01,11.0,11.0
+Bag,Seasonal naive (baseline),3,2026-03-01,14.0,14.0
+Bag,Seasonal naive (baseline),3,2026-04-01,11.0,15.0
+Bag,Seasonal naive (baseline),3,2026-05-01,12.0,13.0
+Bag,Seasonal naive (baseline),3,2026-06-01,12.0,13.0
+Bag,Seasonal naive (baseline),3,2026-07-01,15.0,16.0
+Bag,Seasonal naive (baseline),3,2026-08-01,22.0,21.0
+Bag,Seasonal naive (baseline),3,2026-09-01,13.0,11.0
+Bag,Seasonal naive (baseline),3,2026-10-01,10.0,10.0
+Bag,"Holt-Winters (damped, additive)",1,2023-11-01,10.0,9.605546358843956
+Bag,"Holt-Winters (damped, additive)",1,2023-12-01,9.0,8.972054643992752
+Bag,"Holt-Winters (damped, additive)",1,2024-01-01,10.0,9.424870515786745
+Bag,"Holt-Winters (damped, additive)",1,2024-02-01,10.0,9.651440766471802
+Bag,"Holt-Winters (damped, additive)",1,2024-03-01,11.0,10.51247987978049
+Bag,"Holt-Winters (damped, additive)",1,2024-04-01,13.0,12.074289101048523
+Bag,"Holt-Winters (damped, additive)",1,2024-05-01,11.0,10.555858447817311
+Bag,"Holt-Winters (damped, additive)",1,2024-06-01,13.0,12.347145945651652
+Bag,"Holt-Winters (damped, additive)",1,2024-07-01,16.0,14.822805927782667
+Bag,"Holt-Winters (damped, additive)",1,2024-08-01,17.0,16.012267101270258
+Bag,"Holt-Winters (damped, additive)",1,2024-09-01,12.0,10.84691835261872
+Bag,"Holt-Winters (damped, additive)",1,2024-10-01,11.0,9.07930510687514
+Bag,"Holt-Winters (damped, additive)",2,2024-11-01,12.0,12.084666371767087
+Bag,"Holt-Winters (damped, additive)",2,2024-12-01,12.0,11.147394606769955
+Bag,"Holt-Winters (damped, additive)",2,2025-01-01,13.0,12.023779260338713
+Bag,"Holt-Winters (damped, additive)",2,2025-02-01,11.0,12.034435990755362
+Bag,"Holt-Winters (damped, additive)",2,2025-03-01,14.0,12.999778302592876
+Bag,"Holt-Winters (damped, additive)",2,2025-04-01,15.0,14.868024835670031
+Bag,"Holt-Winters (damped, additive)",2,2025-05-01,13.0,12.919491375912655
+Bag,"Holt-Winters (damped, additive)",2,2025-06-01,13.0,14.885534830810986
+Bag,"Holt-Winters (damped, additive)",2,2025-07-01,16.0,17.735564009557184
+Bag,"Holt-Winters (damped, additive)",2,2025-08-01,21.0,18.702423067353582
+Bag,"Holt-Winters (damped, additive)",2,2025-09-01,11.0,13.6199439630204
+Bag,"Holt-Winters (damped, additive)",2,2025-10-01,10.0,12.3442231109828
+Bag,"Holt-Winters (damped, additive)",3,2025-11-01,11.0,12.393692096818112
+Bag,"Holt-Winters (damped, additive)",3,2025-12-01,10.0,12.040621288912703
+Bag,"Holt-Winters (damped, additive)",3,2026-01-01,11.0,12.793285756677232
+Bag,"Holt-Winters (damped, additive)",3,2026-02-01,11.0,11.235005877371105
+Bag,"Holt-Winters (damped, additive)",3,2026-03-01,14.0,13.716062083671515
+Bag,"Holt-Winters (damped, additive)",3,2026-04-01,11.0,14.762887900469918
+Bag,"Holt-Winters (damped, additive)",3,2026-05-01,12.0,12.729920655606398
+Bag,"Holt-Winters (damped, additive)",3,2026-06-01,12.0,13.300150853500497
+Bag,"Holt-Winters (damped, additive)",3,2026-07-01,15.0,16.488353924266583
+Bag,"Holt-Winters (damped, additive)",3,2026-08-01,22.0,20.3720988745739
+Bag,"Holt-Winters (damped, additive)",3,2026-09-01,13.0,11.43758106492613
+Bag,"Holt-Winters (damped, additive)",3,2026-10-01,10.0,10.684217629375459
+Bag,Ridge on lags + month,1,2023-11-01,10.0,10.384103085292713
+Bag,Ridge on lags + month,1,2023-12-01,9.0,10.53163110252667
+Bag,Ridge on lags + month,1,2024-01-01,10.0,9.905125610165385
+Bag,Ridge on lags + month,1,2024-02-01,10.0,9.995444725637961
+Bag,Ridge on lags + month,1,2024-03-01,11.0,10.662806323171122
+Bag,Ridge on lags + month,1,2024-04-01,13.0,11.937969783450269
+Bag,Ridge on lags + month,1,2024-05-01,11.0,11.54973595941097
+Bag,Ridge on lags + month,1,2024-06-01,13.0,12.550347297032719
+Bag,Ridge on lags + month,1,2024-07-01,16.0,14.780950696684538
+Bag,Ridge on lags + month,1,2024-08-01,17.0,16.497591458017972
+Bag,Ridge on lags + month,1,2024-09-01,12.0,13.727024672248927
+Bag,Ridge on lags + month,1,2024-10-01,11.0,12.031686454405195
+Bag,Ridge on lags + month,2,2024-11-01,12.0,12.567925488377798
+Bag,Ridge on lags + month,2,2024-12-01,12.0,12.058945890397624
+Bag,Ridge on lags + month,2,2025-01-01,13.0,12.107284632952707
+Bag,Ridge on lags + month,2,2025-02-01,11.0,12.347713741837932
+Bag,Ridge on lags + month,2,2025-03-01,14.0,12.971153418996208
+Bag,Ridge on lags + month,2,2025-04-01,15.0,14.491914395827472
+Bag,Ridge on lags + month,2,2025-05-01,13.0,13.895691962007348
+Bag,Ridge on lags + month,2,2025-06-01,13.0,15.055123010530563
+Bag,Ridge on lags + month,2,2025-07-01,16.0,17.548710350266195
+Bag,Ridge on lags + month,2,2025-08-01,21.0,19.20748758863237
+Bag,Ridge on lags + month,2,2025-09-01,11.0,15.978387010319796
+Bag,Ridge on lags + month,2,2025-10-01,10.0,14.731166623702448
+Bag,Ridge on lags + month,3,2025-11-01,11.0,14.496219609274686
+Bag,Ridge on lags + month,3,2025-12-01,10.0,14.179824491618492
+Bag,Ridge on lags + month,3,2026-01-01,11.0,13.89742725793522
+Bag,Ridge on lags + month,3,2026-02-01,11.0,13.491720223727695
+Bag,Ridge on lags + month,3,2026-03-01,14.0,15.39880079784378
+Bag,Ridge on lags + month,3,2026-04-01,11.0,16.763460446134722
+Bag,Ridge on lags + month,3,2026-05-01,12.0,15.475064353033959
+Bag,Ridge on lags + month,3,2026-06-01,12.0,15.54493614915853
+Bag,Ridge on lags + month,3,2026-07-01,15.0,17.94976691827192
+Bag,Ridge on lags + month,3,2026-08-01,22.0,21.98384725101488
+Bag,Ridge on lags + month,3,2026-09-01,13.0,15.5476196262336
+Bag,Ridge on lags + month,3,2026-10-01,10.0,13.000292612348131
+Firewood,Naive,1,2023-11-01,3.0,1.0
+Firewood,Naive,1,2023-12-01,3.0,1.0
+Firewood,Naive,1,2024-01-01,2.0,1.0
+Firewood,Naive,1,2024-02-01,1.0,1.0
+Firewood,Naive,1,2024-03-01,1.0,1.0
+Firewood,Naive,1,2024-04-01,1.0,1.0
+Firewood,Naive,1,2024-05-01,1.0,1.0
+Firewood,Naive,1,2024-06-01,1.0,1.0
+Firewood,Naive,1,2024-07-01,1.0,1.0
+Firewood,Naive,1,2024-08-01,1.0,1.0
+Firewood,Naive,1,2024-09-01,1.0,1.0
+Firewood,Naive,1,2024-10-01,2.0,1.0
+Firewood,Naive,2,2024-11-01,3.0,2.0
+Firewood,Naive,2,2024-12-01,4.0,2.0
+Firewood,Naive,2,2025-01-01,3.0,2.0
+Firewood,Naive,2,2025-02-01,1.0,2.0
+Firewood,Naive,2,2025-03-01,1.0,2.0
+Firewood,Naive,2,2025-04-01,1.0,2.0
+Firewood,Naive,2,2025-05-01,1.0,2.0
+Firewood,Naive,2,2025-06-01,1.0,2.0
+Firewood,Naive,2,2025-07-01,1.0,2.0
+Firewood,Naive,2,2025-08-01,1.0,2.0
+Firewood,Naive,2,2025-09-01,1.0,2.0
+Firewood,Naive,2,2025-10-01,2.0,2.0
+Firewood,Naive,3,2025-11-01,3.0,2.0
+Firewood,Naive,3,2025-12-01,4.0,2.0
+Firewood,Naive,3,2026-01-01,3.0,2.0
+Firewood,Naive,3,2026-02-01,1.0,2.0
+Firewood,Naive,3,2026-03-01,1.0,2.0
+Firewood,Naive,3,2026-04-01,1.0,2.0
+Firewood,Naive,3,2026-05-01,1.0,2.0
+Firewood,Naive,3,2026-06-01,1.0,2.0
+Firewood,Naive,3,2026-07-01,1.0,2.0
+Firewood,Naive,3,2026-08-01,1.0,2.0
+Firewood,Naive,3,2026-09-01,1.0,2.0
+Firewood,Naive,3,2026-10-01,1.0,2.0
+Firewood,Seasonal naive (baseline),1,2023-11-01,3.0,2.0
+Firewood,Seasonal naive (baseline),1,2023-12-01,3.0,3.0
+Firewood,Seasonal naive (baseline),1,2024-01-01,2.0,3.0
+Firewood,Seasonal naive (baseline),1,2024-02-01,1.0,1.0
+Firewood,Seasonal naive (baseline),1,2024-03-01,1.0,1.0
+Firewood,Seasonal naive (baseline),1,2024-04-01,1.0,1.0
+Firewood,Seasonal naive (baseline),1,2024-05-01,1.0,1.0
+Firewood,Seasonal naive (baseline),1,2024-06-01,1.0,1.0
+Firewood,Seasonal naive (baseline),1,2024-07-01,1.0,1.0
+Firewood,Seasonal naive (baseline),1,2024-08-01,1.0,1.0
+Firewood,Seasonal naive (baseline),1,2024-09-01,1.0,1.0
+Firewood,Seasonal naive (baseline),1,2024-10-01,2.0,1.0
+Firewood,Seasonal naive (baseline),2,2024-11-01,3.0,3.0
+Firewood,Seasonal naive (baseline),2,2024-12-01,4.0,3.0
+Firewood,Seasonal naive (baseline),2,2025-01-01,3.0,2.0
+Firewood,Seasonal naive (baseline),2,2025-02-01,1.0,1.0
+Firewood,Seasonal naive (baseline),2,2025-03-01,1.0,1.0
+Firewood,Seasonal naive (baseline),2,2025-04-01,1.0,1.0
+Firewood,Seasonal naive (baseline),2,2025-05-01,1.0,1.0
+Firewood,Seasonal naive (baseline),2,2025-06-01,1.0,1.0
+Firewood,Seasonal naive (baseline),2,2025-07-01,1.0,1.0
+Firewood,Seasonal naive (baseline),2,2025-08-01,1.0,1.0
+Firewood,Seasonal naive (baseline),2,2025-09-01,1.0,1.0
+Firewood,Seasonal naive (baseline),2,2025-10-01,2.0,2.0
+Firewood,Seasonal naive (baseline),3,2025-11-01,3.0,3.0
+Firewood,Seasonal naive (baseline),3,2025-12-01,4.0,4.0
+Firewood,Seasonal naive (baseline),3,2026-01-01,3.0,3.0
+Firewood,Seasonal naive (baseline),3,2026-02-01,1.0,1.0
+Firewood,Seasonal naive (baseline),3,2026-03-01,1.0,1.0
+Firewood,Seasonal naive (baseline),3,2026-04-01,1.0,1.0
+Firewood,Seasonal naive (baseline),3,2026-05-01,1.0,1.0
+Firewood,Seasonal naive (baseline),3,2026-06-01,1.0,1.0
+Firewood,Seasonal naive (baseline),3,2026-07-01,1.0,1.0
+Firewood,Seasonal naive (baseline),3,2026-08-01,1.0,1.0
+Firewood,Seasonal naive (baseline),3,2026-09-01,1.0,1.0
+Firewood,Seasonal naive (baseline),3,2026-10-01,1.0,2.0
+Firewood,"Holt-Winters (damped, additive)",1,2023-11-01,3.0,2.4253683409269824
+Firewood,"Holt-Winters (damped, additive)",1,2023-12-01,3.0,3.297071522529489
+Firewood,"Holt-Winters (damped, additive)",1,2024-01-01,2.0,2.9315116388096825
+Firewood,"Holt-Winters (damped, additive)",1,2024-02-01,1.0,1.1269818756921437
+Firewood,"Holt-Winters (damped, additive)",1,2024-03-01,1.0,1.0609983588688725
+Firewood,"Holt-Winters (damped, additive)",1,2024-04-01,1.0,0.913144670275504
+Firewood,"Holt-Winters (damped, additive)",1,2024-05-01,1.0,0.6430963103906033
+Firewood,"Holt-Winters (damped, additive)",1,2024-06-01,1.0,0.8013992206036983
+Firewood,"Holt-Winters (damped, additive)",1,2024-07-01,1.0,0.985332794473778
+Firewood,"Holt-Winters (damped, additive)",1,2024-08-01,1.0,0.9863492613315515
+Firewood,"Holt-Winters (damped, additive)",1,2024-09-01,1.0,1.0394250091310213
+Firewood,"Holt-Winters (damped, additive)",1,2024-10-01,2.0,1.0934701363836319
+Firewood,"Holt-Winters (damped, additive)",2,2024-11-01,3.0,2.697663329587661
+Firewood,"Holt-Winters (damped, additive)",2,2024-12-01,4.0,3.206691901144499
+Firewood,"Holt-Winters (damped, additive)",2,2025-01-01,3.0,2.601565036070212
+Firewood,"Holt-Winters (damped, additive)",2,2025-02-01,1.0,1.2415706769411137
+Firewood,"Holt-Winters (damped, additive)",2,2025-03-01,1.0,1.1477960399874936
+Firewood,"Holt-Winters (damped, additive)",2,2025-04-01,1.0,1.0492352862838943
+Firewood,"Holt-Winters (damped, additive)",2,2025-05-01,1.0,0.893356899985788
+Firewood,"Holt-Winters (damped, additive)",2,2025-06-01,1.0,0.9698887582957543
+Firewood,"Holt-Winters (damped, additive)",2,2025-07-01,1.0,1.1150339510131038
+Firewood,"Holt-Winters (damped, additive)",2,2025-08-01,1.0,1.1128845234793519
+Firewood,"Holt-Winters (damped, additive)",2,2025-09-01,1.0,1.1677193963802655
+Firewood,"Holt-Winters (damped, additive)",2,2025-10-01,2.0,1.5826712520304125
+Firewood,"Holt-Winters (damped, additive)",3,2025-11-01,3.0,2.9270582538153835
+Firewood,"Holt-Winters (damped, additive)",3,2025-12-01,4.0,3.6026167325822467
+Firewood,"Holt-Winters (damped, additive)",3,2026-01-01,3.0,2.82154631784668
+Firewood,"Holt-Winters (damped, additive)",3,2026-02-01,1.0,1.200787352959971
+Firewood,"Holt-Winters (damped, additive)",3,2026-03-01,1.0,1.1641672183517087
+Firewood,"Holt-Winters (damped, additive)",3,2026-04-01,1.0,1.1120542570394432
+Firewood,"Holt-Winters (damped, additive)",3,2026-05-01,1.0,1.0177721081436772
+Firewood,"Holt-Winters (damped, additive)",3,2026-06-01,1.0,1.0642306319543677
+Firewood,"Holt-Winters (damped, additive)",3,2026-07-01,1.0,1.1488500380876316
+Firewood,"Holt-Winters (damped, additive)",3,2026-08-01,1.0,1.1533564908739584
+Firewood,"Holt-Winters (damped, additive)",3,2026-09-01,1.0,1.1885069712823473
+Firewood,"Holt-Winters (damped, additive)",3,2026-10-01,1.0,1.8369115586001317
+Firewood,Ridge on lags + month,1,2023-11-01,3.0,1.8599988135591867
+Firewood,Ridge on lags + month,1,2023-12-01,3.0,2.504401932419104
+Firewood,Ridge on lags + month,1,2024-01-01,2.0,2.6956278368170885
+Firewood,Ridge on lags + month,1,2024-02-01,1.0,1.4049898521526212
+Firewood,Ridge on lags + month,1,2024-03-01,1.0,1.0516263117541693
+Firewood,Ridge on lags + month,1,2024-04-01,1.0,1.0099139790074512
+Firewood,Ridge on lags + month,1,2024-05-01,1.0,0.9975426795248669
+Firewood,Ridge on lags + month,1,2024-06-01,1.0,1.0189732568260421
+Firewood,Ridge on lags + month,1,2024-07-01,1.0,1.0918413114879053
+Firewood,Ridge on lags + month,1,2024-08-01,1.0,1.063746095793434
+Firewood,Ridge on lags + month,1,2024-09-01,1.0,1.1227750768053715
+Firewood,Ridge on lags + month,1,2024-10-01,2.0,1.1165574472090651
+Firewood,Ridge on lags + month,2,2024-11-01,3.0,2.8505538090924256
+Firewood,Ridge on lags + month,2,2024-12-01,4.0,2.7927969253710025
+Firewood,Ridge on lags + month,2,2025-01-01,3.0,2.127998599120943
+Firewood,Ridge on lags + month,2,2025-02-01,1.0,1.1975961110911384
+Firewood,Ridge on lags + month,2,2025-03-01,1.0,1.0047793087049266
+Firewood,Ridge on lags + month,2,2025-04-01,1.0,1.0167887170394523
+Firewood,Ridge on lags + month,2,2025-05-01,1.0,1.0028897210490841
+Firewood,Ridge on lags + month,2,2025-06-01,1.0,1.019135202670847
+Firewood,Ridge on lags + month,2,2025-07-01,1.0,1.0850187009164007
+Firewood,Ridge on lags + month,2,2025-08-01,1.0,1.0599316424461813
+Firewood,Ridge on lags + month,2,2025-09-01,1.0,1.1177661252259714
+Firewood,Ridge on lags + month,2,2025-10-01,2.0,1.7486802769184693
+Firewood,Ridge on lags + month,3,2025-11-01,3.0,2.9260027936381863
+Firewood,Ridge on lags + month,3,2025-12-01,4.0,3.5286220719704926
+Firewood,Ridge on lags + month,3,2026-01-01,3.0,3.031309008256178
+Firewood,Ridge on lags + month,3,2026-02-01,1.0,1.4524355937890898
+Firewood,Ridge on lags + month,3,2026-03-01,1.0,1.067393762475795
+Firewood,Ridge on lags + month,3,2026-04-01,1.0,1.045004256004639
+Firewood,Ridge on lags + month,3,2026-05-01,1.0,1.0357889175035733
+Firewood,Ridge on lags + month,3,2026-06-01,1.0,1.0532843011567943
+Firewood,Ridge on lags + month,3,2026-07-01,1.0,1.1110307932223522
+Firewood,Ridge on lags + month,3,2026-08-01,1.0,1.0837125439533433
+Firewood,Ridge on lags + month,3,2026-09-01,1.0,1.1323906727141666
+Firewood,Ridge on lags + month,3,2026-10-01,1.0,1.804703683333075

@@ -1,0 +1,24 @@
+{
+ "rows": 274,
+ "first": "2004-01-01",
+ "last": "2026-10-01",
+ "missing": 0,
+ "duplicate_dates": 0,
+ "gaps": 0,
+ "out_of_range": 0,
+ "model_rows": 142,
+ "zero_share_pre2015": {
+  "iPhone": 0.37,
+  "Perfume": 0.13,
+  "Deep fryer": 1.0,
+  "Bag": 0.36,
+  "Firewood": 0.82
+ },
+ "zero_share_2015plus": {
+  "iPhone": 0.0,
+  "Perfume": 0.0,
+  "Deep fryer": 0.5,
+  "Bag": 0.0,
+  "Firewood": 0.27
+ }
+}
