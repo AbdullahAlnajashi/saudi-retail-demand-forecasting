@@ -3,9 +3,11 @@
  "first": "2004-01-01",
  "last": "2026-10-01",
  "missing": 0,
+ "lt1_set_to_0.5": 0,
  "duplicate_dates": 0,
  "gaps": 0,
  "out_of_range": 0,
+ "filled_by_interpolation": 0,
  "model_rows": 142,
  "zero_share_pre2015": {
   "iPhone": 0.37,

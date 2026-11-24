@@ -1,19 +1,23 @@
 """IS 366 Project 1 - Google Trends retail demand (Saudi Arabia). Run: python analysis.py
 Needs: pandas numpy scipy scikit-learn matplotlib. Input: data/google_trends_SA_raw.csv"""
-import json, warnings, numpy as np, pandas as pd, matplotlib
+import json, os, numpy as np, pandas as pd, matplotlib
 matplotlib.use("Agg"); import matplotlib.pyplot as plt
 from scipy.optimize import minimize
 from sklearn.linear_model import Ridge
-warnings.filterwarnings("ignore")
+os.chdir(os.path.dirname(os.path.abspath(__file__)))   # paths below are relative to this script's folder
 NAMES = {"ايفون": "iPhone", "عطور": "Perfume", "Deep fryer": "Deep fryer", "شنطة": "Bag", "حطب": "Firewood"}
 START, H, M = "2015-01-01", 12, 12
 # ---------- 1. load + clean ----------
-raw = pd.read_csv("data/google_trends_SA_raw.csv", parse_dates=["Time"]).rename(columns=NAMES).set_index("Time")
-raw.index.freq = "MS"
+raw = pd.read_csv("data/google_trends_SA_raw.csv", parse_dates=["Time"], dtype=str).rename(columns=NAMES).set_index("Time")
+lt1 = int(raw.eq("<1").sum().sum())                    # Google writes "<1" for values between 0 and 1
+raw = raw.replace("<1", "0.5").apply(pd.to_numeric, errors="coerce")   # any other non-numeric text -> missing
 audit = {"rows": len(raw), "first": str(raw.index.min().date()), "last": str(raw.index.max().date()),
-         "missing": int(raw.isna().sum().sum()), "duplicate_dates": int(raw.index.duplicated().sum()),
+         "missing": int(raw.isna().sum().sum()), "lt1_set_to_0.5": lt1, "duplicate_dates": int(raw.index.duplicated().sum()),
          "gaps": int((pd.date_range(raw.index.min(), raw.index.max(), freq="MS").difference(raw.index)).size),
          "out_of_range": int(((raw < 0) | (raw > 100)).sum().sum())}
+raw = raw[~raw.index.duplicated()].sort_index().asfreq("MS")   # one row per month; gaps become missing rows
+audit["filled_by_interpolation"] = int(raw.isna().sum().sum())
+raw = raw.interpolate(limit_direction="both")
 df = raw.loc[START:].astype(float)           # modelling window 2015-01 .. 2026-10
 audit["model_rows"] = len(df)
 audit["zero_share_pre2015"] = raw.loc[:"2014-12"].eq(0).mean().round(2).to_dict()
@@ -22,8 +26,8 @@ df.to_csv("data/clean_monthly_2015_2026.csv")
 # ---------- 2. descriptive ----------
 desc = pd.DataFrame({"mean_2015_2026": df.mean(), "max": df.max(), "peak_month": df.idxmax().dt.strftime("%Y-%m"),
                      "mean_last12": df.iloc[-12:].mean(), "mean_prev12": df.iloc[-24:-12].mean()}).round(2)
-desc["yoy_change_%"] = ((desc.mean_last12 / desc.mean_prev12 - 1) * 100).round(1)
-desc["rank_last12"] = desc.mean_last12.rank(ascending=False).astype(int)
+desc["yoy_change_%"] = ((desc.mean_last12 / desc.mean_prev12.replace(0, np.nan) - 1) * 100).round(1)  # n/a if prior year is 0
+desc["rank_last12"] = desc.mean_last12.rank(ascending=False, method="min").astype(int)
 desc.to_csv("results/descriptive_summary.csv")
 annual = df.groupby(df.index.year).mean().round(1); annual.to_csv("results/annual_average.csv")
 full = df.loc[:"2025-12"]
@@ -72,11 +76,12 @@ for c in df.columns:
         P, A = np.array(P), np.array(A); nz = A > 0
         rows.append({"series": c, "model": mname, "MAE": np.abs(A - P).mean(), "RMSE": np.sqrt(((A - P) ** 2).mean()),
                      "MAPE_%": (np.abs((A - P)[nz] / A[nz]).mean() * 100) if df[c].iloc[-36:].mean() >= 5 else np.nan})
-met = pd.DataFrame(rows).round(2); pr = pd.DataFrame(preds)
+met = pd.DataFrame(rows); pr = pd.DataFrame(preds)
+best = met.loc[met.groupby("series").MAE.idxmin()].set_index("series").model.to_dict()   # select on unrounded MAE
+met = met.round(2)
 base = met[met.model.str.contains("baseline")].set_index("series").MAE
 met["MAE_vs_baseline_%"] = ((met.MAE / met.series.map(base) - 1) * 100).round(1)
 met.to_csv("results/model_metrics_backtest.csv", index=False); pr.to_csv("results/backtest_predictions.csv", index=False)
-best = met.loc[met.groupby("series").MAE.idxmin()].set_index("series").model.to_dict()
 # ---------- 4. final forecast (Nov 2026 - Oct 2027) ----------
 fidx = pd.date_range(df.index[-1] + pd.DateOffset(months=1), periods=H, freq="MS"); fc = []
 for c in df.columns:
@@ -119,9 +124,10 @@ dash = {"hist": {c: {"d": [d.strftime("%Y-%m") for d in df.index], "v": df[c].to
                    "best": pr[(pr.series == c) & (pr.fold == 3) & (pr.model == best[c])].pred.round(1).tolist()} for c in df.columns},
         "fc": {c: {"d": fc[fc.series == c].date.dt.strftime("%Y-%m").tolist(), "f": fc[fc.series == c].forecast.tolist(),
                    "lo": fc[fc.series == c].lo80.tolist(), "hi": fc[fc.series == c].hi80.tolist(), "model": best[c]} for c in df.columns},
-        "seas": {c: sidx[c].tolist() for c in df.columns}, "annual": {"y": [int(i) for i in annual.index], **{c: annual[c].tolist() for c in df.columns}},
-        "desc": desc.reset_index().rename(columns={"index": "series"}).to_dict("records"), "metrics": met.fillna(-1).to_dict("records"), "best": best}
-json.dump(dash, open("results/dashboard_data.json", "w"))
-json.dump(audit, open("results/data_quality_audit.json", "w"), indent=1)
+        "seas": {c: [None if pd.isna(v) else v for v in sidx[c]] for c in df.columns}, "annual": {"y": [int(i) for i in annual.index], **{c: annual[c].tolist() for c in df.columns}},
+        "desc": json.loads(desc.reset_index().rename(columns={"index": "series"}).to_json(orient="records")),   # NaN -> null
+        "metrics": met.fillna(-1).to_dict("records"), "best": best}
+with open("results/dashboard_data.json", "w") as f: json.dump(dash, f)
+with open("results/data_quality_audit.json", "w") as f: json.dump(audit, f, indent=1)
 print(json.dumps(audit, indent=1)); print(desc.to_string()); print(annual.to_string()); print(sidx.to_string()); print(corr.to_string())
 print(met.to_string()); print("BEST", best); print(fc[fc.date.isin([fidx[0], fidx[5], fidx[-1]])].to_string())

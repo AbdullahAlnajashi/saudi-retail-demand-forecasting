@@ -3,10 +3,11 @@
 **Dataset (No. 18):** Google Trends "Interest over time", Saudi Arabia, monthly, Jan 2004 - Oct 2026, terms: ايفون (iPhone), عطور (perfume), Deep fryer, شنطة (bag), حطب (firewood). Exported 3 Nov 2026 from https://trends.google.com/trends/explore. Search interest is a *proxy* for demand, not sales. Data is governed by Google's Terms of Service.
 
 ## How to reproduce
-1. `pip install pandas numpy scipy scikit-learn matplotlib`
-2. Keep this folder structure; `data/google_trends_SA_raw.csv` is the raw export.
-3. `python analysis.py` - cleans data, runs descriptive analytics, backtests 4 models, forecasts Nov 2026 - Oct 2027, writes `data/clean_monthly_2015_2026.csv`, `results/*`, `figures/*`.
+1. `pip install -r requirements.txt`
+2. Keep this folder structure; `data/google_trends_SA_raw.csv` is the raw export. The scripts can be run from any working directory.
+3. `python analysis.py` - cleans data, runs descriptive analytics, backtests 4 models, forecasts Nov 2026 - Oct 2027, writes `data/clean_monthly_2015_2026.csv`, `results/*`, `figures/*`. Google's `<1` values are read as 0.5; missing months are filled by linear interpolation (both counted in `results/data_quality_audit.json`).
 4. `python build_dashboard.py` - builds `dashboard.html`. Open it in a browser (needs internet for the Chart.js library).
+5. `python check_results.py` - optional sanity checks on the outputs (metrics, no leakage, forecast ranges).
 
 Works in Google Colab: upload the folder, then run both scripts.
 
@@ -18,6 +19,8 @@ trends.google.com/trends/explore -> Location: Saudi Arabia, Time: 2004 - present
 |---|---|
 | analysis.py | Full pipeline (cleaning, descriptive, models, forecast, figures) |
 | build_dashboard.py / dashboard.html | Decision-support prototype (Deliverable 4) |
+| check_results.py | Sanity checks on the outputs |
+| requirements.txt | Python dependencies |
 | data/ | Raw export and cleaned monthly data (2015-2026) |
 | results/ | Metrics, forecasts, seasonal index, annual averages, audit |
 | figures/ | fig1-fig5 PNG charts |
